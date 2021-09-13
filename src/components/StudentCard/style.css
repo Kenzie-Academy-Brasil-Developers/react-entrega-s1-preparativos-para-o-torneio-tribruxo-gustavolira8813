@@ -1,0 +1,87 @@
+@font-face {
+  font-family: [harry];
+  src: local(harry), url(../../harry_p/HARRYP__.TTF);
+}
+.container {
+  display: flex;
+  flex-direction: row;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 4px solid;
+  border-radius: 10px;
+  margin: 4px;
+  flex: 160px 0 0;
+  filter: brightness(1.2);
+  cursor: pointer;
+  font-family: harry;
+}
+.card img {
+  width: 100%;
+  height: 150px;
+}
+.card h3 {
+  margin: auto;
+}
+.card p {
+  margin: auto;
+}
+.card ul {
+  margin: auto;
+  list-style: none;
+}
+.card ul li {
+}
+.Gryffindor {
+  border: 6px solid darkred;
+  background-color: #8b0000d4;
+  font-weight: bold;
+}
+.Gryffindor p {
+  color: darkred;
+  background-color: black;
+  width: 100%;
+}
+.Slytherin {
+  border: 6px solid green;
+  background-color: #008000d6;
+  font-weight: bold;
+}
+.Slytherin p {
+  color: green;
+  background-color: black;
+  width: 100%;
+}
+.Hufflepuff {
+  border: 6px solid yellow;
+  background-color: #ffff00cc;
+  font-weight: bold;
+}
+.Hufflepuff p {
+  color: yellow;
+  background-color: black;
+  width: 100%;
+}
+.Ravenclaw {
+  border: 6px solid blue;
+  background-color: #0000ffd1;
+  font-weight: bold;
+}
+.Ravenclaw p {
+  color: blue;
+  background-color: black;
+  width: 100%;
+}
+@media (min-width: 720px) {
+  .card {
+    margin: 5px;
+    max-width: 300px;
+    max-height: 500px;
+  }
+  .card img {
+    height: 220px;
+    width: 200px;
+  }
+}

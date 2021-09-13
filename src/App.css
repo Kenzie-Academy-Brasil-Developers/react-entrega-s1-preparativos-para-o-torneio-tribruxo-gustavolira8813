@@ -1,0 +1,110 @@
+@font-face {
+  font-family: [harry];
+  src: local(harry), url(./harry_p/HARRYP__.TTF);
+}
+.App {
+  text-align: center;
+  font-family: harry;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  /* background-color: #282c34; */
+  background: linear-gradient(45deg, blue, yellow, red, green);
+
+  background-size: 200% 200%;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  animation: colors 10s ease infinite;
+}
+@keyframes colors {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.start {
+  background-image: url("harryPotter.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.start h2 {
+  border: 1px solid;
+  border-radius: 8px;
+  background: #ff000063;
+}
+.box {
+  display: flex;
+  justify-content: center;
+}
+.containerr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hidden {
+  display: none;
+}
+button {
+  font-family: harry;
+  width: 150px;
+  height: 35px;
+  margin: 5px;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    to right,
+    darkred,
+    darkgreen,
+    rgb(179, 179, 9),
+    darkblue
+  );
+}
+button:hover {
+  filter: brightness(2);
+}
+.btns {
+  font-family: harry;
+  display: flex;
+  flex-direction: column;
+}
